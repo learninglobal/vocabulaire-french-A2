@@ -1,134 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>LearninGlobal – Vocabulaire français A2</title>
 <style>
-:root{
-  --orange:#f36b16;
-  --orange-dark:#d95708;
-  --cream:#fff8f2;
-  --ink:#263238;
-  --muted:#6b7280;
-  --card:#ffffff;
-  --line:#f1dfd1;
-}
-*{box-sizing:border-box}
-body{
-  margin:0;
-  font-family:Arial,Helvetica,sans-serif;
-  background:linear-gradient(180deg,#fff8f2 0%,#fff 45%,#fff8f2 100%);
-  color:var(--ink);
-}
-header{
-  background:linear-gradient(135deg,var(--orange),#ff8a36);
-  color:white;
-  padding:34px 20px 30px;
-  text-align:center;
-  box-shadow:0 4px 18px rgba(0,0,0,.08);
-}
-.brand{
-  display:inline-flex;
-  align-items:center;
-  gap:12px;
-  font-size:1.15rem;
-  font-weight:700;
-  margin-bottom:16px;
-}
-.logo{
-  width:38px;height:38px;border-radius:50%;
-  background:white;color:var(--orange);
-  display:grid;place-items:center;
-  font-size:22px;
-  box-shadow:0 2px 7px rgba(0,0,0,.12);
-}
-h1{margin:0;font-size:clamp(1.9rem,5vw,3rem)}
-.subtitle{margin:10px auto 0;max-width:700px;font-size:1.05rem;opacity:.96}
-main{max-width:1100px;margin:0 auto;padding:34px 18px 50px}
-.intro{text-align:center;margin-bottom:28px}
-.intro h2{margin:0 0 8px;font-size:1.35rem}
-.intro p{margin:0;color:var(--muted)}
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
-  gap:16px;
-}
-.card{
-  display:flex;
-  flex-direction:column;
-  min-height:170px;
-  padding:22px;
-  background:var(--card);
-  border:1px solid var(--line);
-  border-radius:20px;
-  text-decoration:none;
-  color:inherit;
-  box-shadow:0 5px 16px rgba(78,50,30,.06);
-  transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;
-}
-.card:hover,.card:focus{
-  transform:translateY(-4px);
-  box-shadow:0 10px 25px rgba(78,50,30,.12);
-  border-color:#ffc49e;
-  outline:none;
-}
-.icon{font-size:2.35rem;margin-bottom:18px}
-.card h3{margin:0 0 7px;font-size:1.08rem}
-.card p{margin:0 0 18px;color:var(--muted);font-size:.9rem;line-height:1.4}
-.go{
-  margin-top:auto;
-  font-size:.88rem;
-  font-weight:700;
-  color:var(--orange-dark);
-}
-footer{text-align:center;color:var(--muted);font-size:.85rem;padding:0 20px 32px}
-footer strong{color:var(--orange-dark)}
-@media(max-width:520px){
-  header{padding-top:26px}
-  main{padding-top:25px}
-  .grid{grid-template-columns:repeat(2,1fr);gap:10px}
-  .card{min-height:150px;padding:16px;border-radius:16px}
-  .icon{font-size:1.9rem;margin-bottom:12px}
-  .card p{display:none}
-}
+:root{--orange:#f36b16;--dark:#d95708;--cream:#fff8f2;--ink:#292929}
+*{box-sizing:border-box} body{margin:0;font-family:Arial,sans-serif;background:var(--cream);color:var(--ink)}
+header{background:linear-gradient(135deg,var(--orange),#ff914d);color:white;text-align:center;padding:34px 18px}
+.brand{font-size:28px;font-weight:800} .smile{display:inline-grid;place-items:center;background:white;color:var(--orange);border-radius:50%;width:42px;height:42px;margin-right:9px}
+header h1{margin:16px 0 7px;font-size:clamp(28px,5vw,44px)} header p{margin:0;font-size:17px}
+.grid{max-width:1100px;margin:30px auto;padding:0 18px 35px;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.card{display:block;text-decoration:none;color:inherit;background:white;border-radius:20px;padding:22px;box-shadow:0 6px 20px #00000012;border:2px solid transparent;transition:.18s}
+.card:hover{transform:translateY(-3px);border-color:#ffd4b7} .icon{font-size:40px} h2{font-size:20px;margin:12px 0 7px} .card p{min-height:42px;color:#666;line-height:1.4}
+.card span{color:var(--dark);font-weight:800}
+@media(max-width:560px){.grid{grid-template-columns:repeat(2,1fr);gap:10px;padding:0 10px}.card{padding:15px}.card p{font-size:13px}}
 </style>
 </head>
 <body>
 <header>
-  <div class="brand"><span class="logo">☺</span> LearninGlobal</div>
-  <h1>Vocabulaire français A2</h1>
-  <p class="subtitle">Explore le vocabulaire, observe les images et entraîne-toi avec des activités interactives.</p>
+<div class="brand"><span class="smile">☺</span>LearninGlobal</div>
+<h1>Vocabulaire français A2</h1>
+<p>Explore le vocabulaire, observe les images et entraîne-toi avec des activités interactives.</p>
 </header>
-
-<main>
-  <section class="intro">
-    <h2>Choisis un thème</h2>
-    <p>Ouvre une carte pour commencer.</p>
-  </section>
-
-  <section class="grid">
-    <a class="card" href="LearninGlobal_A_l_ordinateur_Vocabulaire_et_Activites (2).html"><span class="icon">💻</span><h3>À l’ordinateur</h3><p>Ordinateur, Internet et outils numériques.</p><span class="go">Explorer →</span></a>
-    <a class="card" href="LearninGlobal_Faire_des_achats_Vocabulaire_et_Activites(1).html"><span class="icon">🛍️</span><h3>Faire des achats</h3><p>Acheter, vendre et faire les magasins.</p><span class="go">Explorer →</span></a>
-    <a class="card" href="LearninGlobal_L_ecole_Vocabulaire_et_Activites(1).html"><span class="icon">🏫</span><h3>À l’école</h3><p>Les lieux, les objets et la vie scolaire.</p><span class="go">Explorer →</span></a>
-    <a class="card" href="LearninGlobal_La_cuisine_Vocabulaire_et_Activites(1).html"><span class="icon">🍳</span><h3>La cuisine</h3><p>Les objets, les actions et le vocabulaire de la cuisine.</p><span class="go">Explorer →</span></a>
-    <a class="card" href="LearninGlobal_La_maison_Vocabulaire_et_Activites(1).html"><span class="icon">🏠</span><h3>La maison</h3><p>Les pièces et le vocabulaire de la maison.</p><span class="go">Explorer →</span></a>
-    <a class="card" href="LearninGlobal_La_musique_Vocabulaire_et_Activites(1).html"><span class="icon">🎵</span><h3>La musique</h3><p>Les instruments et les actions musicales.</p><span class="go">Explorer →</span></a>
-    <a class="card" href="LearninGlobal_La_ville_Vocabulaire_et_Activites(1).html"><span class="icon">🏙️</span><h3>La ville</h3><p>Les lieux et les services de la ville.</p><span class="go">Explorer →</span></a>
-    <a class="card" href="LearninGlobal_Le_corps_humain_Vocabulaire_et_Activites(1).html"><span class="icon">🧍</span><h3>Le corps humain</h3><p>Le corps, le visage et les parties du corps.</p><span class="go">Explorer →</span></a>
-    <a class="card" href="LearninGlobal_Le_magasin_de_vetements_Vocabulaire_et_Activites(1).html"><span class="icon">👕</span><h3>Le magasin de vêtements</h3><p>Vêtements, accessoires et tissus.</p><span class="go">Explorer →</span></a>
-    <a class="card" href="LearninGlobal_Le_restaurant_Vocabulaire_et_Activites(1).html"><span class="icon">🍽️</span><h3>Le restaurant</h3><p>Commander, manger et parler du repas.</p><span class="go">Explorer →</span></a>
-    <a class="card" href="LearninGlobal_Le_salon_et_la_salle_a_manger_Vocabulaire_et_Activites(1).html"><span class="icon">🛋️</span><h3>Le salon et la salle à manger</h3><p>Meubles et objets de la maison.</p><span class="go">Explorer →</span></a>
-    <a class="card" href="LearninGlobal_Le_theatre_Vocabulaire_et_Activites(1).html"><span class="icon">🎭</span><h3>Le théâtre</h3><p>La scène, le spectacle et les artistes.</p><span class="go">Explorer →</span></a>
-    <a class="card" href="LearninGlobal_Les_loisirs_Vocabulaire_et_Activites(1).html"><span class="icon">🎨</span><h3>Les loisirs</h3><p>Activités, sorties et temps libre.</p><span class="go">Explorer →</span></a>
-    <a class="card" href="LearninGlobal_Les_metiers_et_les_professions_Vocabulaire_et_Activites(1).html"><span class="icon">👩‍🔧</span><h3>Les métiers et les professions</h3><p>Professions et monde du travail.</p><span class="go">Explorer →</span></a>
-    <a class="card" href="LearninGlobal_Les_moyens_de_transport_Vocabulaire_et_Activites(1).html"><span class="icon">🚆</span><h3>Les moyens de transport</h3><p>Se déplacer et reconnaître les moyens de transport.</p><span class="go">Explorer →</span></a>
-    <a class="card" href="LearninGlobal_Les_taches_menageres_Vocabulaire_et_Activites (1).html"><span class="icon">🧹</span><h3>Les tâches ménagères</h3><p>Les activités et responsabilités à la maison.</p><span class="go">Explorer →</span></a>
-  </section>
+<main class="grid">
+<a class="card" href="LearninGlobal_A_l_ordinateur_Vocabulaire_et_Activites (2).html">
+      <div class="icon">💻</div><h2>À l’ordinateur</h2><p>Ordinateur, Internet et outils numériques.</p><span>Explorer →</span>
+    </a>
+<a class="card" href="LearninGlobal_Faire_des_achats_Vocabulaire_et_Activites.html">
+      <div class="icon">🛍️</div><h2>Faire des achats</h2><p>Acheter, vendre et faire les magasins.</p><span>Explorer →</span>
+    </a>
+<a class="card" href="LearninGlobal_L_ecole_Vocabulaire_et_Activites.html">
+      <div class="icon">🏫</div><h2>À l’école</h2><p>Les lieux, les objets et la vie scolaire.</p><span>Explorer →</span>
+    </a>
+<a class="card" href="LearninGlobal_La_cuisine_Vocabulaire_et_Activites.html">
+      <div class="icon">🍳</div><h2>La cuisine</h2><p>Les objets, les actions et le vocabulaire de la cuisine.</p><span>Explorer →</span>
+    </a>
+<a class="card" href="LearninGlobal_La_maison_Vocabulaire_et_Activites.html">
+      <div class="icon">🏠</div><h2>La maison</h2><p>Les pièces et le vocabulaire de la maison.</p><span>Explorer →</span>
+    </a>
+<a class="card" href="LearninGlobal_La_musique_Vocabulaire_et_Activites.html">
+      <div class="icon">🎵</div><h2>La musique</h2><p>Les instruments et les actions musicales.</p><span>Explorer →</span>
+    </a>
+<a class="card" href="LearninGlobal_La_ville_Vocabulaire_et_Activites.html">
+      <div class="icon">🏙️</div><h2>La ville</h2><p>Les lieux et les services de la ville.</p><span>Explorer →</span>
+    </a>
+<a class="card" href="LearninGlobal_Le_corps_humain_Vocabulaire_et_Activites.html">
+      <div class="icon">🧍</div><h2>Le corps humain</h2><p>Le corps, le visage et les parties du corps.</p><span>Explorer →</span>
+    </a>
+<a class="card" href="LearninGlobal_Le_magasin_de_vetements_Vocabulaire_et_Activites.html">
+      <div class="icon">👕</div><h2>Le magasin de vêtements</h2><p>Vêtements, accessoires et tissus.</p><span>Explorer →</span>
+    </a>
+<a class="card" href="LearninGlobal_Le_restaurant_Vocabulaire_et_Activites.html">
+      <div class="icon">🍽️</div><h2>Le restaurant</h2><p>Commander, manger et parler du repas.</p><span>Explorer →</span>
+    </a>
+<a class="card" href="LearninGlobal_Le_salon_et_la_salle_a_manger_Vocabulaire_et_Activites.html">
+      <div class="icon">🛋️</div><h2>Le salon et la salle à manger</h2><p>Meubles et objets de la maison.</p><span>Explorer →</span>
+    </a>
+<a class="card" href="LearninGlobal_Le_theatre_Vocabulaire_et_Activites.html">
+      <div class="icon">🎭</div><h2>Le théâtre</h2><p>La scène, le spectacle et les artistes.</p><span>Explorer →</span>
+    </a>
+<a class="card" href="LearninGlobal_Les_loisirs_Vocabulaire_et_Activites.html">
+      <div class="icon">🎨</div><h2>Les loisirs</h2><p>Activités, sorties et temps libre.</p><span>Explorer →</span>
+    </a>
+<a class="card" href="LearninGlobal_Les_metiers_et_les_professions_Vocabulaire_et_Activites.html">
+      <div class="icon">👩‍🔧</div><h2>Les métiers et les professions</h2><p>Professions et monde du travail.</p><span>Explorer →</span>
+    </a>
+<a class="card" href="LearninGlobal_Les_moyens_de_transport_Vocabulaire_et_Activites.html">
+      <div class="icon">🚆</div><h2>Les moyens de transport</h2><p>Se déplacer et reconnaître les moyens de transport.</p><span>Explorer →</span>
+    </a>
+<a class="card" href="LearninGlobal_Les_taches_menageres_Vocabulaire_et_Activites (1).html">
+      <div class="icon">🧹</div><h2>Les tâches ménagères</h2><p>Les activités et responsabilités à la maison.</p><span>Explorer →</span>
+    </a>
 </main>
-
-<footer>
-  <strong>LearninGlobal</strong> · Learn. Learn again, Learn better.
-</footer>
 </body>
 </html>
