@@ -16,6 +16,14 @@ header h1{margin:16px 0 7px;font-size:clamp(28px,5vw,44px)} header p{margin:0;fo
 .card span{color:var(--dark);font-weight:800}
 @media(max-width:560px){.grid{grid-template-columns:repeat(2,1fr);gap:10px;padding:0 10px}.card{padding:15px}.card p{font-size:13px}}
 </style>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#f36b16">
+<link rel="apple-touch-icon" href="icon-192.png">
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => navigator.serviceWorker.register('./service-worker.js'));
+}
+</script>
 </head>
 <body>
 <header>

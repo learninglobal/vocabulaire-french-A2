@@ -1,0 +1,22 @@
+{
+  "name": "LearninGlobal – French Vocabulary A2",
+  "short_name": "French Vocab A2",
+  "description": "Interactive French A2 vocabulary by LearninGlobal.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fff8f2",
+  "theme_color": "#f36b16",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
